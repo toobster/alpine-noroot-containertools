@@ -1,8 +1,5 @@
 FROM alpine
 
-RUN apk --update add iputils nmap curl && \
-rm -rf /var/cache/apk/*
-
 #Set Capabilities on busybox
 RUN setcap 'cap_net_raw,cap_net_bind_service,cap_chown,cap_dac_override,cap_fowner,cap_fsetid,cap_kill,cap_setgid,cap_setuid,cap_setpcap,cap_sys_chroot,cap_mknod,cap_audit_write,cap_setfcap=+ep' /bin/busybox
 
