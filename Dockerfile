@@ -1,8 +1,6 @@
-FROM debian
+FROM registry.access.redhat.com/ubi7/ubi
 
-#Set Capabilities on busybox
-RUN apt install iputils-arping
-#Create a group for our user
+RUN yum -y update && yum -y install iputils
 
 
 # This is a Dumb Hack
