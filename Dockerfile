@@ -1,7 +1,7 @@
 FROM debian
 
 #Set Capabilities on busybox
-RUN apt install inetutils-ping
+RUN apt install iputils-arping
 #Create a group for our user
 
 
