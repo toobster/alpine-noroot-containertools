@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi7/ubi
 
-RUN yum -y update && yum -y install iputils traceroute
+RUN yum -y update && yum -y install iputils tracepath
 
 
 # This is a Dumb Hack
